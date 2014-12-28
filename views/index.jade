@@ -1,0 +1,40 @@
+﻿extends layout
+
+block content
+    div.navbar
+        div.navbar-header
+            a.navbar-brand(href='/') Alm To Go
+        ul.nav.navbar-nav
+            li 
+                a(href-'#') Builds
+            li
+                a(href-'#') Commits
+            li
+                a(href-'#') Wiki
+
+    ol.breadcrumb
+        li
+            a(href='/') Home
+        li.active Builds
+
+    div.jumbotron
+        hi These are your current build
+    div.content
+        div.row
+            div.col-sm-8
+                div.well
+                    p the quick brown fox jumped over the laxy dogs.
+                table.table.table-bordered.table-striped
+                    thead
+                        th Name
+                        th Date
+                        th Status
+                    tbody
+                        tr
+                            td ALM To Go
+                            td 12/12/2014
+                            td Success
+                         tr
+                            td ALM To Go
+                            td 12/25/2014
+                            td Success
